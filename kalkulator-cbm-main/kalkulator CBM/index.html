@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator CBM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="header">
+    <a href="#" class="logo">
+        <img src="img/logo.png" alt="logo" height="50">
+    </a>
+
+    <div class="title">topr<span>e</span>mit</div>
+
+    <nav class="nav">
+        <a href="#">Product</a>
+        <a href="#">Resources</a>
+        <a href="#">About Us</a>
+    </nav>
+
+    <div class="header-second">
+        <button class="id-btn">ID</button>
+        <button class="login-btn">Login</button>
+        <button class="register-btn">Register</button>
+    </div>
+</header>
+
+<!-- HERO -->
+<section class="home">
+    <div class="home-text">
+        <p>Experience the best way to transfer</p>
+        <p>money abroad from Indonesia</p>
+        <button class="try-btn">Try now</button>
+    </div>
+</section>
+
+<h1 class="cbm-title">CBM Calculator for Shipping Purpose</h1>
+
+<!-- FORM -->
+<section class="container">
+
+<form class="container-one">
+
+    <!-- UNIT -->
+    <div class="measurement">Unit Measurement</div>
+    <div class="unit">
+        <button type="button">cm</button>
+        <button type="button">m</button>
+        <button type="button">mm</button>
+        <button type="button">inch</button>
+        <button type="button">ft</button>
+    </div>
+
+    <!-- DIMENSION -->
+    <div class="dimension">
+        <div class="field">
+            <label for="length">Length</label>
+            <input type="number" id="length" placeholder="0.00">
+        </div>
+
+        <div class="field">
+            <label for="width">Width</label>
+            <input type="number" id="width" placeholder="0.00">
+        </div>
+
+        <div class="field">
+            <label for="height">Height</label>
+            <input type="number" id="height" placeholder="0.00">
+        </div>
+    </div>
+
+    <!-- WEIGHT & QUANTITY -->
+    <div class="weight-quantity">
+
+        <div class="field">
+            <label for="weight">Weight</label>
+            <input type="number" id="weight" placeholder="0.00">
+            <select id="weight-unit">
+                <option value="kg">kg</option>
+                <option value="lb">lb</option>
+            </select>
+        </div>
+
+        <div class="field">
+            <label for="quantity">Quantity</label>
+            <input type="number" id="quantity" placeholder="0">
+            <select id="quantity-unit">
+                <option value="pcs">pcs</option>
+            </select>
+        </div>
+
+    </div>
+
+</form>
+
+<!-- TOTAL VOLUME -->
+<div class="container-three">
+    <div class="result-header">
+        <img src="img/block.svg" alt="">
+        <span>Total Volume</span>
+    </div>
+
+    <div class="result-volume">
+        <div class="result-item">
+            <div class="result-title">Volume (m³)</div>
+            <span class="result-value">0</span>
+        </div>
+
+        <div class="result-item">
+            <div class="result-title">Volume (ft³)</div>
+            <span class="result-value">0</span>
+        </div>
+    </div>
+</div>
+
+<!-- TOTAL WEIGHT -->
+<div class="container-four">
+    <div class="result-header">
+        <img src="img/weight.svg" alt="">
+        <span>Total Weight</span>
+    </div>
+
+    <div class="weight-grid">
+        <div class="result-item">
+            <div class="result-title">Actual Weight</div>
+            <span class="result-value">0 kg</span>
+            <div class="result-sub">0 lb</div>
+        </div>
+
+        <div class="result-item">
+            <div class="result-title">Ocean Volumetric</div>
+            <span class="result-value">0 kg</span>
+            <div class="result-sub">0 lb</div>
+        </div>
+
+        <div class="result-item">
+            <div class="result-title">Air Volumetric</div>
+            <span class="result-value">0 kg</span>
+            <div class="result-sub">0 lb</div>
+        </div>
+
+        <div class="result-item">
+            <div class="result-title">Ground Volumetric</div>
+            <span class="result-value">0 kg</span>
+            <div class="result-sub">0 lb</div>
+        </div>
+    </div>
+</div>
+
+<!-- CONTAINER CAPACITY -->
+<div class="container-five">
+    <div class="result-header">
+        <img src="img/wall.svg" alt="">
+        <span>Container Capacity</span>
+    </div>
+
+    <div class="container-grid">
+        <div class="container-item">
+            <div class="container-type">20ft Container</div>
+            <span class="container-value">0 Cartons</span>
+        </div>
+
+        <div class="container-item">
+            <div class="container-type">40ft Container</div>
+            <span class="container-value">0 Cartons</span>
+        </div>
+
+        <div class="container-item">
+            <div class="container-type">40ft HC Container</div>
+            <span class="container-value">0 Cartons</span>
+        </div>
+
+        <div class="container-item">
+            <div class="container-type">45ft HC Container</div>
+            <span class="container-value">0 Cartons</span>
+        </div>
+    </div>
+</div>
+
+</section>
+
+</body>
+</html>
